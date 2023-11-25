@@ -1,16 +1,21 @@
 import React from 'react'
 import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
-import First from './First'
-import Second from './Second'
+import Layout from './components/Layout'
+import HomePage from './pages/HomePage'
+import Products from './pages/Products'
 
 const MyRoute = () => {
   return (
+    <>
     <Router>
         <Routes>
-            <Route path='/' element={<First/>}/>
-            <Route path='/second' element={<Second/>}/>
+            <Route path='/' element={<Layout/>}>
+                <Route index element={<HomePage/>}/>
+                <Route path='products' element={<Products/>}/>
+            </Route>
         </Routes>
     </Router>
+    </>
   )
 }
 
