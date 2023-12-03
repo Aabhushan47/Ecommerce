@@ -9,7 +9,7 @@ const Header = () => {
           <ul className="nav me-auto">
             <li className="nav-item">
               <Link
-                to="#"
+                to="/"
                 className="nav-link link-body-emphasis px-2 active"
                 aria-current="page"
               >
@@ -17,8 +17,8 @@ const Header = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="#" className="nav-link link-body-emphasis px-2">
-                Features
+              <Link to="/products" className="nav-link link-body-emphasis px-2">
+                Products
               </Link>
             </li>
             <li className="nav-item">

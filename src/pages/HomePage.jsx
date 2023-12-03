@@ -1,7 +1,13 @@
 import React from "react";
+import Card from "../components/Card";
 
 const HomePage = () => {
-  return <div>HomePage</div>;
+  return (
+    <>
+      <Card />
+      <Card />
+    </>
+  );
 };
 
 export default HomePage;
