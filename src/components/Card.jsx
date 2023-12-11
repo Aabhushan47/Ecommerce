@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Card = (props) => {
   const { title, price, image, id } = props.data;
@@ -10,7 +11,9 @@ const Card = (props) => {
           <div className="card-body">
             <h5 className="card-title">{title.slice(0, 25)}...</h5>
             <h5 className="card-price">${price}</h5>
-            <button className="btn btn-success">View Details</button>
+            <Link to={`/productdetails/${id}`} className="btn btn-info">
+              View Details
+            </Link>
           </div>
         </div>
       </div>
