@@ -1,26 +1,31 @@
-import React from 'react'
-import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
-import Layout from './components/Layout'
-import HomePage from './pages/HomePage'
-import Products from './pages/Products'
-import ProductDetails from './pages/ProductDetails'
-import Cart from './pages/Cart'
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout";
+import HomePage from "./pages/HomePage";
+import Products from "./pages/Products";
+import ProductDetails from "./pages/ProductDetails";
+import Cart from "./pages/Cart";
+import Register from "./pages/Register";
 
 const MyRoute = () => {
   return (
     <>
-    <Router>
+      <Router>
         <Routes>
-            <Route path='/' element={<Layout/>}>
-                <Route index element={<HomePage/>}/>
-                <Route path='products' element={<Products/>}/>
-                <Route path='productdetails/:productId' element={<ProductDetails/>}/>
-                <Route path='cart' element={<Cart/>}/>
-            </Route>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<HomePage />} />
+            <Route path="products" element={<Products />} />
+            <Route
+              path="productdetails/:productId"
+              element={<ProductDetails />}
+            />
+            <Route path="cart" element={<Cart />} />
+            <Route path="register" element={<Register />} />
+          </Route>
         </Routes>
-    </Router>
+      </Router>
     </>
-  )
-}
+  );
+};
 
-export default MyRoute
+export default MyRoute;

@@ -4,7 +4,7 @@ import axios from "axios";
 
 const Products = () => {
   const [products, setProducts] = useState([]);
-  const [limit, setLimit] = useState(12);
+  const [limit, setLimit] = useState(8);
   useEffect(() => {
     axios
       .get(`https://fakestoreapi.com/products`)

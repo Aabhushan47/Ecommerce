@@ -1,11 +1,12 @@
 import React from "react";
-import Card from "../components/Card";
+import CardContainer from "../components/CardContainer";
 
 const HomePage = () => {
   return (
     <>
-      <Card />
-      <Card />
+      <div className="my-4">
+        <CardContainer />
+      </div>
     </>
   );
 };
